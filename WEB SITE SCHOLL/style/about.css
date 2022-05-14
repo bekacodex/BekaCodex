@@ -1,0 +1,174 @@
+/* about--achievaments  */
+.about--achievaments {
+    margin-top: 3rem;
+}
+
+.about--achievaments-container,
+.about--container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 5rem;
+}
+
+.about--achievaments-right>p {
+    margin: 1.6rem 0 2.5rem;
+}
+
+.achievaments--cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.achievaments--card {
+    background: var(--color-bg1);
+    padding: 1.6rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.achievaments--card:hover {
+    background: var(--color-bg2);
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+.achievaments--icon {
+    background: var(--color-denger);
+    padding: 0.6rem;
+    border-radius: 1rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.achievaments--card:nth-child(2) .achievaments--icon {
+    background: var(--color-success);
+}
+
+.achievaments--card:nth-child(3) .achievaments--icon {
+    background: var(--color-primary);
+}
+
+.achievaments--card:nth-child(4) .achievaments--icon {
+    background: var(--color-waring);
+}
+
+.achievaments--card p {
+    margin-top: 1rem;
+}
+
+/* about--achievaments end */
+/* team */
+.team {
+    background: var(--color-bg1);
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+}
+
+.team--container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.team--momber {
+    background: var(--color-bg2);
+    padding: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.team--momber:hover {
+    background: transparent;
+    border-color: var(--color-primary);
+}
+
+.team--momber-image {
+    filter: saturate(1);
+}
+
+.team--momber:hover img {
+    filter: saturate(0);
+}
+
+.team--momber-info * {
+    text-align: center;
+    margin-top: 1.4rem;
+}
+
+.team--momber-info p {
+    color: var(--color-light);
+}
+
+.team--momber-socials {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-primary);
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: -2rem 0 2rem rgba(0, 0, 0, 0.3);
+    transition: var(--transition);
+}
+
+.team--momber:hover .team--momber-socials {
+    right: 0;
+}
+
+.team--momber-socials a {
+    padding: 1rem;
+
+}
+
+/* MEDIA  */
+@media screen and (max-width: 1024px) {
+    .about--achievaments {
+        margin-top: 2rem;
+    }
+
+    .about--achievaments-container,
+    .about--container {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .about--achievaments-left {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .team--container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .team--momber {
+        padding: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .achievaments--cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .team--container {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+    }
+
+    .team--momber {
+        padding: 0;
+    }
+
+    .team--momber p {
+        margin-bottom: 1.5rem;
+    }
+
+}
