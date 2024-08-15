@@ -79,7 +79,7 @@ Here are some ideas to get you started:
 [Linkedin](https://www.linkedin.com/in/og-abek-khudayberdiyev-7b4897222?fromQR=1)
 
 &nbsp;&nbsp;
-[instagram](https://www.instagram.com/beka_391/)
+[instagram](https://www.instagram.com/1thebeka/)
 
 
 ### Languages and Tools:🚀
